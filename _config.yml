@@ -1,0 +1,30 @@
+# Site settings
+name: yuan
+email: yuanji1990@163.com
+author: Yuan ji
+# 个人网站
+# url: http://www.hifreud.com
+url: https://yjlxl.github.io/
+# 个人简历网站
+#resume_site: http://www.hifreud.com/Resume.io/
+github: https://github.com/yjlxl/
+# baseurl修改为项目名，如果项目是'***.github.io'，则设置为空''
+baseurl: ""
+#description: Actually, less is more!
+#meta_description: 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
+#motto: It's our wits that make us men.
+banner: 纸上得来终觉浅，觉知此事要躬行！
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: yjlxl
+
+# Build settings
+markdown: kramdown
+
+#baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+
