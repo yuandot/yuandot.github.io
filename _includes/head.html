@@ -1,25 +1,38 @@
-<head>
+﻿<head>
+	<!--charset 属性规定 HTML 文档的字符编码-->
 	<meta charset="utf-8">
+	<!-- X-UA-Compatible是IE8的一个专有<meta>属性，它告诉IE8采用何种IE版本去渲染网页-->
+	<!--使用下面这段代码使用的是Edge 。模式Edge 模式告诉 IE 以最高级模式渲染文档，也就是任何 IE 版本都以当前版本所支持的最高级标准模式渲染，避免版本升级造成的影响。简单的说，就是什么版本 IE 就用什么版本的标准模式渲染。-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 为移动设备添加 viewport, 用来优化移动浏览器的显示 -->
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ page.title | append: ' - ' |append: site.name }}</title>
-
-	<link rel="shortcut icon" href="{{ '/styles/images/favicon.jpg' | prepend: site.baseurl }}">
-	<link rel="icon" href="{{ '/styles/images/favicon.jpg' | prepend: site.baseurl }}">
-
+	<!--定义了浏览器工具栏的标题;当网页添加到收藏夹时，显示在收藏夹中的标题;显示在搜索引擎结果页面的标题-->
+	<title>{{ page.title | append: ' - ' | append: site.name }}</title>
+	<!--link 标签定义了文档与外部资源之间的关系-->
+	<!-- Shortcut Icon 就是在网址列前面出现的Icon, 是必须的-->
+	<link rel="shortcut icon" href="{{ '/styles/images/icon.jpg' | prepend: site.baseurl }}">
+	<!--只有当希望为新浏览器提供另一种备用图像, 才必须 icon-->
+	<link rel="icon" href="{{ '/styles/images/icon.jpg' | prepend: site.baseurl }}">
+	<!-- stylesheet ，链接到外部样式文件-->
 	<link rel="stylesheet" href="{{ '/styles/css/index.css' | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ '/styles/css/fontawesome/css/font-awesome.min.css' | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ '/styles/css/syntax.css' | prepend: site.baseurl }}">
+	<!--告诉搜索引擎哪个才是正宗原版网页-->
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+	<!--定义了一个可替换的样式表-->
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ '/feed.xml' | prepend: site.baseurl }}">
-	
+	<!--规定一个逗号分隔的关键词列表-->
 	<meta name="keywords" content="{{ page.title | append: ', ' | append: site.name | append: ', ' | append: site.meta_description}}">
+	<!--规定页面的描述-->
 	<meta name="description" content="{{site.meta_description}}">
-
+	<!--引用外部js脚本-->
 	<script src="{{ '/styles/js/jquery.min.js' | prepend: site.baseurl }}"></script>
 	<!--[if lt IE 9]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->
+	<!--嵌入脚本语句， 用于百度统计访问量-->
+	<!--
   	<script>
 		var _hmt = _hmt || [];
 		(function() {
@@ -29,8 +42,10 @@
 		  s.parentNode.insertBefore(hm, s);
 		})();
 	</script>
+	-->
   	<style type="text/css">
 	  	.docs-content{
+		//设置下边框距
 	  		margin-bottom: 10px;
 	  	}
   	</style>
