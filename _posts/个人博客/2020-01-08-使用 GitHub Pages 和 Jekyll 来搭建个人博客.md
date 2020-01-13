@@ -560,7 +560,7 @@ linter。
 
 #### 2.8.18 标签没有正确终止
 
-意味着代码中包含了为没有正确终止的输出标签。例如，不应该是 `{{ page.title }`，而应该是 `{{ page.title }}`。
+意味着代码中包含了为没有正确终止的输出标签。例如，不应该是 `\{\{ page.title \}`，而应该是 `\{\{ page.title \}\}`。
 
 更多语法可参考 [Liquid objects](https://help.shopify.com/en/themes/liquid/objects)。
 
