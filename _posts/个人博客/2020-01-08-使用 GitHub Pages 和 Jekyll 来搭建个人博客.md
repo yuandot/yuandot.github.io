@@ -452,13 +452,13 @@ GitHub 拥有的扩展，可以在 GitHub 上显示 GitHub 风格 Markdown。更
 
 意味着 `_includes` 目录下不存在代码中引用的文件。
 
-为了排除这个错误，在错误信息中的文件中搜索 `inlcude` 来查看是否有引用其它文件，例如 `\{% include example_header.html %\}` 这样的语句。如果引用的文件没有存在，需要在 `_includes` 目录下添加相应文件。
+为了排除这个错误，在错误信息中的文件中搜索 `inlcude` 来查看是否有引用其它文件，例如 `\{\% include example_header.html \%\}` 这样的语句。如果引用的文件没有存在，需要在 `_includes` 目录下添加相应文件。
 
 #### 2.8.5 文件是一个符号链接
 
 意味着代码中引用了一个符号链接文件，实际在发布源中不存在这个文件内容。
 
-为了排除这个错误，在错误信息中的文件中搜索 `inlcude` 来查看是否有引用其它文件，例如 `\{% include example_header.html %}` 这样的语句。如果引用的文件是一个符号链接，需要在 `_includes` 目录下添加相应文件。
+为了排除这个错误，在错误信息中的文件中搜索 `inlcude` 来查看是否有引用其它文件，例如 `\{\% include example_header.html \%}` 这样的语句。如果引用的文件是一个符号链接，需要在 `_includes` 目录下添加相应文件。
 
 #### 2.8.6 文件不是 UTF-8 编码
 
@@ -554,7 +554,7 @@ linter。
 
 #### 2.8.17 标签没有正确关闭
 
-意味这个代码中包含未正确关闭的逻辑标记。例如 `\{% capture example_variable %\}` 必须使用 `\{% endcapture %\}` 来关闭。
+意味这个代码中包含未正确关闭的逻辑标记。例如 `\{\% capture example_variable \%\}` 必须使用 `\{\% endcapture \%\}` 来关闭。
 
 为了排除这个错误，请确保错误消息中提到的文件中的所有逻辑标记都正确关闭。更多信息可参考标记语法 [Liquid tags](https://help.shopify.com/en/themes/liquid/tags)。
 
