@@ -14,15 +14,6 @@ tag:
 [https://www.cnblogs.com/popfisher/p/5731232.html](https://www.cnblogs.com/popfisher/p/5731232.html)
 [https://www.cnblogs.com/liuguanglin/p/8351616.html](https://www.cnblogs.com/liuguanglin/p/8351616.html)
 
-注意：设置之后我不能用 git@xxxx 地址进行操作，只能使用 ssl 方式进行操作，否则会出现下列错误：
-
-    $ git clone git@github.com:xxxx/test-test_sub-test_sun.git
-    Cloning into 'test-test_sub-test_sun'...
-    Permission denied (publickey).
-    fatal: Could not read from remote repository.
-    
-    Please make sure you have the correct access rights
-    and the repository exists.
 
 ## 1 生成公钥和私钥
 
@@ -69,3 +60,5 @@ tag:
 
     ssh -T git@u1.github.com
     ssh -T git@u2.github.com
+    
+> 远程仓库如果使用 SSH，那么需要将仓库名 `git@github.com:xxxx` 修改为 `git@u1.github.com:xxxx`。
