@@ -37,7 +37,7 @@ GitHub Pages 是一个静态站点托管服务，直接从 repository 获取 HTM
 * **user 和 organization** 
     * 与一个指定的 GitHub 账户关联；
     * 仓库名是 `<user>.github.io` 和 `<organization>.github.io`，如果没有使用自定义域名，则外部访问使用的域名是 `http(s)://<username>.github.io` 和 `http(s)://<organization>.github.io`；
-    * 每个账户只能常见一个。
+    * 每个账户只能创建一个。
 
 > 如果使用遗留的 `<user>.github.com` 名称仍然发布的仓库，外部访问者会被直接从 `http(s)://<username>.github.com` 重定向到 `http(s)://<username>.github.io`。如果 `<user>.github.com` 和 `<user>.github.io` 同时存在，仅仅 `<user>.github.io`仓库会被发布。
 
