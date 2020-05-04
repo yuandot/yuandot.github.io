@@ -11,8 +11,8 @@ tag:
 
 参考链接：
 
-[https://www.cnblogs.com/popfisher/p/5731232.html](https://www.cnblogs.com/popfisher/p/5731232.html)
-[https://www.cnblogs.com/liuguanglin/p/8351616.html](https://www.cnblogs.com/liuguanglin/p/8351616.html)
+* [https://www.cnblogs.com/popfisher/p/5731232.html](https://www.cnblogs.com/popfisher/p/5731232.html)
+* [https://www.cnblogs.com/liuguanglin/p/8351616.html](https://www.cnblogs.com/liuguanglin/p/8351616.html)
 
 
 ## 1 生成公钥和私钥
@@ -25,11 +25,11 @@ tag:
 
 用同样的方式生成另一个 sshkey，命名为 id_rsa_1。
 
-把生成的公钥和私钥文件拷贝到 C:\Users\xxx\.ssh 中。
+把生成的公钥和私钥文件拷贝到 C:\Users\xxx\\.ssh 中。
 
 ## 2 添加公钥到对应的 github 账号 或者其他平台账号中
 
-** github 平台**：账号->Settings->SSH and GPG keys->New SSH key
+**github 平台**：账号->Settings->SSH and GPG keys->New SSH key
 
 ## 3 在 .ssh 目录中创建 config 文本文件
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Windows 安装 commitizen"
-categories: [Git，commitizen]
+categories: [Git]
 tag: [版本控制，commit message]
 ---
 
